@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing:border-box}
+body {margin:10px;background: #141E30;background: -webkit-linear-gradient(-45deg, #35577D, #141E30); padding: 40px;}
+.mySlides {display:none}
+h2 {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.5);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  font-size: 22px;
+  line-height: 24px;
+  padding-bottom: 30px;
+  text-align: left;
+  width: 70%;
+}
+p {
+  color: AliceBlue;
+  font-size: 20px;
+ font-style:italic;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  line-height: 34px;
+  text-align: left;
+  width: 100%;
+}
+  <h3 class="byline">Article By: Magazine name</h3>
+.writer-img {
+  -webkit-box-shadow: 5px 0px 5px 0px rgba(0, 0, 50, 0.97);
+  -moz-box-shadow: 5px 0px 5px 0px rgba(0, 0, 50, 0.97);
+  box-shadow: 5px 0px 5px 0px rgba(0, 0, 50, 0.97);
+  float: left;
+  width: 50px;
+}
+
+.byline {
+  color: rgba(255, 255, 255, 0.5);
+  float: left;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  font-size: 14px;
+  padding-left: 10px;
+  text-transform: uppercase;
+}
+/* Slideshow container */
+.slideshow-container {
+  max-width:1000px;
+  position: relative;
+  margin:  auto;
+padding: 0px 0px 0px 170px;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+.prev {
+  left: 340px;
+  border-radius: 3px 0 0 3px;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 340px;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: blue;
+}
+
+/* Caption text */
+.text {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: rgba(255, 255, 255, 0.65);
+  display: block;
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  font-style: italic;
+  line-height: 20px;
+  margin-left: 20px;
+  padding: 10px;
+  position: relative;
+  top: 80%;
+  width: 60%;
+}
+
+/* Number text (1/17 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 18px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 10;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor:pointer;
+  height: 13px;
+  width: 13px;
+  margin: 4px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+</style>
+</head>
+<body>
+
+<h3 class="byline">Article By: Magazine name</h3>
+<div class="slideshow-container">
+<div class="mySlides fade">
+  <div class="numbertext">1/17</div>
+  <img src="1.jpg" style="width:80%;margin: 0px auto;
+  padding: 10px 0px 0px 0px; height: 400px;">
+  
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">2/17</div>
+  <img src="2.jpg" style="width:80%;margin: 0px auto;height:400px;
+padding: 10px 0px 0px 0px;">
+  <div class="text">We generally think about our future life and even make serious plans about it. Yes, we are not kids anymore</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3/17</div>
+  <img src="3.jpg" style="width:80%;margin: 0px auto;height:400px;  padding: 10px 0px 0px 0px;">
+  <div class="text">This is when we start dreaming. Innocent to know even if they are even practical. That is why our dreams have no limitations. Our dreams are filled with hope.</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">4/17</div>
+  <img src="4.jpg" style="width:80%;margin: 0px auto;height:400px;
+  padding: 10px 0px 0px 0px;">
+  <div class="text">We do realize that friends are important in life. We can share with them things that can’t be leaked out to parents and family. We will do anything for our friends.</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">5/17</div>
+  <img src="5.jpg" style="width:80%;margin: 0px auto;height:400px;
+  padding: 10px 0px 0px 0px;">
+  <div class="text">We feel so grown up. Life is getting shorter (We entered teenage right :\  ). We love to adventure. Trips make our life interesting. We are fresh, strong and curious.</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">6/17</div>
+  <img src="6.jpg" style="width:80%;margin: 0px auto;height:400px;
+  padding: 10px 0px 0px 0px;">
+  <div class="text">At times we need privacy. We would love if our parents respect that. We don’t want to be judged. We want somebody who can understand us(though it is tough to understand teenagers).</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">7/17</div>
+  <img src="15.jpg" style="width:80%;margin: 0px auto;height:400px;
+  padding: 10px 0px 0px 0px;">
+  
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">8/17</div>
+  <img src="7.jpg" style="width:80%;margin: 0px auto;height:400px;
+  padding: 10px 0px 0px 0px;">
+  <div class="text">Will you never understand us? :\</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext"> 9/17</div>
+  <img src="8.jpg" style="width:80%;margin: 0px auto;height:400px;
+  padding: 10px 0px 0px 0px;">
+  <div class="text">This is because , we are influenced by our friends. We don’t want to be left out in this world of fashion. Yeah, we were clueless when we used to be kids but do understand, we aren’t kids anymore.</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext"> 10/17</div>
+  <img src="9.jpg" style="width:80%;margin: 0px auto;height:400px;
+  padding: 10px 0px 0px 0px;">
+  <div class="text">This is the age where we will come to understand things about sex. It is quite a shock for us to take in, so it would be really nice if somebody guides us , regarding sex education. We read romance novels too, I always wanted to read them but it is only now that I started understanding them.</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">11/17</div>
+  <img src="10.jpg" style="width:100%;margin: 0px auto;height:400px;
+  padding: 0px  100px 0px 0px;">
+  <div class="text">Gadgets fascinate us. We don’t even know when we were addicted , but I am obsessed with them now.</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">12/17</div>
+  <img src=11.jpg" style="width:80%;margin: 0px auto;height:400px;
+  padding: 10px 0px 0px 0px;">
+  <div class="text">We would love to drive bikes, cars.  Maybe, we also want to try out wine, for fun. We are waiting to cast our vote.  You know why we are desperate to do things though we have no idea how they will be, it’s just because we are restricted.</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">13/17</div>
+  <img src="14.jpg" style="width:80%;margin: 0px auto;height:400px;
+  padding: 10px 0px 0px 0px;">
+  <div class="text">This is all new for us. We wanted to be that one popular girl in school. So yea, social media is how we do it.</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">14/17</div>
+  <img src="13.jpg" style="width:80%;margin: 0px auto;height:400px;
+  padding: 10px 0px 0px 0px;">
+  <div class="text">Food makes me happy. But we aren’t much concerned about health, are we?</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">15/17</div>
+  <img src="16.jpg" style="width:80%;margin: 0px auto;height:500px;
+  ">
+  <div class="text">Now that we grew up. Most of thing on TV started making sense. Wonder how I actually understood all that complicated movies. LOL.</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">16/17</div>
+  <img src="17.jpg" style="width:80%;margin: 0px auto;height:400px;
+  ">
+  <div class="text"></div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">17/17</div>
+  <img src="18.jpg" style="width:80%;margin: 0px auto;height:400px;
+  padding: 10px 0px 0px 0px;">
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">13 / 13</div>
+  <img src="18.jpg" style="width:80%;margin: 0px auto;height:400px;
+  padding: 10px 0px 0px 0px;">
+</div>
+  
+</div>
+<
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span>
+<span class="dot" onclick="currentSlide(4)"></span>
+<span class="dot" onclick="currentSlide(5)"></span>
+<span class="dot" onclick="currentSlide(6)"></span>
+<span class="dot" onclick="currentSlide(7)"></span>
+<span class="dot" onclick="currentSlide(8)"></span>
+<span class="dot" onclick="currentSlide(9)"></span>
+<span class="dot" onclick="currentSlide(10)"></span>
+<span class="dot" onclick="currentSlide(11)"></span> 
+<span class="dot" onclick="currentSlide(12)"></span> 
+<span class="dot" onclick="currentSlide(13)"></span> 
+<span class="dot" onclick="currentSlide(14)"></span> 
+<span class="dot" onclick="currentSlide(15)"></span> 
+<span class="dot" onclick="currentSlide(16)"></span> 
+<span class="dot" onclick="currentSlide(17)"></span> 
+
+</div>
+
+<h2>What a teenager generally wants?</h2>
+<p>Teenage is a phase of life that everybody goes through but they are tough to understand. Parents often have trouble taking of their teenager offspring. You may wonder, what a teenager generally wants? Well, I think I can answer it best. I am a teenager and will be out of my teenage life at the end of this year. So, wanna hear it out?</p>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+</body>
+</html> 
